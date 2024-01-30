@@ -1,4 +1,8 @@
 import random
+from flask import Flask, request
+
+app = Flask(__name__)
+
 
 quotes = {"I like the wine, and not the label.-David Rose",
           "I do not have a lot to my name right now, but I do have one thing: taste.-David Rose",
@@ -15,5 +19,79 @@ quotes = {"I like the wine, and not the label.-David Rose",
           "I’ve been burned so many times I’m like the human equivalent of the inside of a roasted marshmallow.-David Rose",
           }
 
-key = random.choice(list(quotes))
-print(key)
+
+@app.route('/')
+def start_here():
+    """Home page."""
+
+    return """ 
+    <!doctype html>
+    <html>
+        Hi! Welcome to the Schitts Creek Quotes Generator!<br/><a href='/greet'>click here to generate a quote</a></html>
+    </html>
+    """
+
+
+# @app.route('/hello')
+# def say_hello():
+#     """Say hello and prompt for user's name."""
+
+#     return """
+#     <!doctype html>
+#     <html>
+#       <head>
+#         <title>Hi There!</title>
+#       </head>
+#       <body>
+#         <h1>Hi There!</h1>
+#         <form action="/greet">
+#           <select >
+#             <option value="awesome">awesome</option>
+#             <option value="terrific">terrific</option>
+#             <option value="fantastic">fantastic</option>
+#             <option value="neato">neato</option>
+#             <option value="fantabulous">fantabulous</option>
+#             <option value="wowza">wowza</option>
+#             <otpion vaule="oh-so-not-meh">oh-so-not-meh</option>
+#             <option value="brilliant">brilliant</option>
+#             <option value="ducky">ducky</option>
+#             <option value="coolio">coolio</option>
+#             <option value="incredible">incredible</option>
+#             <option value="wonderful">wonderful</option>
+#             <option value="smashing">smashing</option>
+#             <option value="lovely">lovely</option>
+#           </select>
+#             What's your name? <input type="text" name="person">
+#             <input type="submit" value="Submit">
+#         </form>
+#       </body>
+#     </html>
+#     """
+
+
+@app.route('/greet')
+def greet_person():
+    """Get user by name."""
+
+    quote = random.choice(list(quotes))
+
+    return f"""
+    <!doctype html>
+    <html>
+      <head>
+        <title>Quote:</title>
+      </head>
+      <body>
+        {quote}
+      </body>
+    </html>
+    """
+
+
+if __name__ == '__main__':
+    # debug=True gives us error messages in the browser and also "reloads"
+    # our web app if we change the code.
+    app.run(debug=True, host="0.0.0.0")
+
+# key = random.choice(list(quotes))
+# print(key)
