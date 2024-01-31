@@ -1,9 +1,9 @@
 h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #c72e97;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #94557f;
 }
 
-p, a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #7C6C77;
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(123, 170, 123);
 }

@@ -1,5 +1,5 @@
 import random
-from flask import Flask, request
+from flask import (Flask, request, render_template)
 
 app = Flask(__name__)
 
@@ -65,34 +65,17 @@ quotes = {"I like the wine, and not the label. -David Rose",
 def start_here():
     """Home page."""
 
-    return """ 
-    <!doctype html>
-    <html>
-        <h2>
-            Hi! Welcome to the Schitts Creek Quotes Generator!<br/><a href='/generator'>click here to generate a quote</a></html>
-        </h2>
-    </html>
-    """
+    return render_template('homepage.html')
+
 
 @app.route('/generator')
 def greet_person():
     """Generate the quotes."""
 
+    
     quote = random.choice(list(quotes))
 
-    return f"""
-    <!doctype html>
-    <html>
-      <h2>
-        <title>Quote:</title>
-      </h2>
-      <body>
-        <h2>
-        {quote}
-        <h2>
-      </body>
-    </html>
-    """
+    return quote
 
 
 if __name__ == '__main__':
