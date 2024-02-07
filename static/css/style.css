@@ -1,9 +1,26 @@
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #94557f;
+    text-align: center;
+}
+a:link, a:visited {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #94557f;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #94557f;
+    background-color: rgb(255, 255, 255);
 }
 
-a {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(123, 170, 123);
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
+
+

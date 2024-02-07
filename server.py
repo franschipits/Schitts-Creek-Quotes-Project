@@ -69,9 +69,8 @@ def start_here():
 
 
 @app.route('/generator')
-def greet_person():
+def generate_quote():
     """Generate the quotes."""
-
     
     quote = random.choice(list(quotes))
 
