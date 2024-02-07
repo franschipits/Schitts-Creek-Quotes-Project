@@ -2,8 +2,37 @@
 {% block title %}Schitts Creek Quotes{% endblock %}
 
 {% block body %}
+<body>
   <h2>
     Hi! Welcome to the Schitts Creek Quotes Generator!<br><a href='/generator'>Click here to generate a quote</a>
   </h2>
   <img id="schittscreek" class="center" src="/static/images/schittscreek.webp" alt="Family">
+
+  <!-- <div id="demo">
+    <h2>Let AJAX change this text</h2>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+  </div>
+
+  <script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", "quotes.txt", true);
+        xhttp.send();
+      }
+  </script> -->
+
+  <!-- <form id="quote_update">
+    <input type="hidden" id="quote_update">
+    
+    <a href='/quote_update'>Click here to generate a quote</a>
+
+  </form> -->
+</body>
+
+<!-- <script src="/static/quotes.js"> </script>   -->
 {% endblock %}

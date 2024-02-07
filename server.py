@@ -76,6 +76,14 @@ def generate_quote():
 
     return quote
 
+# @app.route("/quote_update", methods=['POST'])
+# def show_notes():
+
+#     quote = request.json.get('new_quote')
+#     quote_update = request.json.get('quote_update')
+#     db.session.commit()
+#     print(quote_update)
+#     return jsonify({'quote': quote})   
 
 if __name__ == '__main__':
     # debug=True gives us error messages in the browser and also "reloads"
