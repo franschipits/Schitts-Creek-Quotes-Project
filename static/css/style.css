@@ -1,11 +1,11 @@
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #94557f;
+    color: #691313;
     text-align: center;
 }
 a:link, a:visited {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #94557f;
+    background-color: #691313;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -14,13 +14,28 @@ a:link, a:visited {
 }
 a:hover, a:active {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #94557f;
-    background-color: rgb(255, 255, 255);
+    color: #691313;
+    background-color: bisque;
 }
 
 h1 {
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+#schittscreek {
+    border-radius: 16px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body {
+    background-color: bisque;
 }
 
 
