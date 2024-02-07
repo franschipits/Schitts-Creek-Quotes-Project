@@ -2,8 +2,12 @@
 {% block title %}Schitts Creek Quotes{% endblock %}
 
 {% block body %}
+{% for quote in quotes %}
     <h2>
-        {{generator.quote}}
+        <a href="/generator/{{generator.quote}}">
+            {{generator.quote}}
+        </a>
     </h2>
 
+{%endfor%}
 {% endblock %}
