@@ -1,5 +1,5 @@
 h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #691313;
     border: 1px solid #691313;
     border-radius: 16px;
@@ -20,7 +20,7 @@ h1 {
 
 #quote-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: x-large;
+    font-size: xx-large;
     color: #691313;
     text-align: center;
 }
@@ -34,7 +34,7 @@ h1 {
 
 .center-welcome {
     display: block;
-    margin-left: 600px;
+    margin-left: 620px;
     margin-right: auto;
     width: 100%;
 }
@@ -42,5 +42,4 @@ h1 {
 body {
     background-color: bisque;
 }
-
 
