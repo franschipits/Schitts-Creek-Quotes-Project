@@ -1,23 +1,11 @@
-// const quotes_form = document.querySelector('#quote_update');
-
-// quotes_form.addEventListener('submit', (evt) => {
-//     evt.preventDefault();
-
-//     const formAnswer = {
-//         new_quote: document.querySelector('#quotes').value,
-//         quote_update: document.querySelector('#quote_update').value
-//     };
-
-//     fetch('/quote_update', {
-//         method: 'POST',
-//         body: JSON.stringify(formAnswer),
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//     })
-
-//     .then((response) => response.json())
-//     .then((responseJSON) => {
-//         notes_h2.innerHTML = responseJSON.notes;
-//     })
-// })
+function showQuote(evt) {
+  
+    fetch('/generator')
+        .then((response) => response.text())
+        .then((responseTEXT)=> {
+            const results = document.querySelector('#quote-text')
+            results.innerText =  responseTEXT})
+}
+  
+const quoteButton = document.querySelector('#get-quote-button');
+quoteButton.addEventListener('click', showQuote);

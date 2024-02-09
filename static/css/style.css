@@ -1,21 +1,12 @@
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #691313;
+    border: 1px solid #691313;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 5px;
+    width: 35%;
     text-align: center;
-}
-a:link, a:visited {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #691313;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-a:hover, a:active {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #691313;
-    background-color: bisque;
 }
 
 h1 {
@@ -27,11 +18,25 @@ h1 {
     border-radius: 16px;
 }
 
+#quote-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: #691313;
+    text-align: center;
+}
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.center-welcome {
+    display: block;
+    margin-left: 600px;
+    margin-right: auto;
+    width: 100%;
 }
 
 body {
