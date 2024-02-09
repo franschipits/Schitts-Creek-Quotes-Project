@@ -10,7 +10,7 @@ This web application is a quote generator for the television series `Schitts Cre
 - Bootstrap
 
 # Features
-I used `AJAX` to create a dynamic generator feature, allowing users to update their quotes by pressing the button and without requiring a full page refresh.
+I used `AJAX` to create a dynamic generator feature, allowing users to update their quotes by pressing the button without requiring a full page refresh.
 ![How it works](/static/images/schitts-creek-gif.gif)
 
 I styled my app using a combination of `Bootstrap` and `CSS` to create a visually appealing, well-organized layout.
